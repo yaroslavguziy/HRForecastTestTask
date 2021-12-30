@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./koa/app.js",
     "migrate": "knex migrate:latest --knexfile db/knexfile.js",
     "migrate:down": "knex migrate:down --knexfile db/knexfile.js"
   },
@@ -14,6 +15,8 @@
     "dotenv": "^10.0.0",
     "knex": "^0.95.15",
     "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "nodemon": "^2.0.15",
     "pg": "^8.7.1"
   }
 }

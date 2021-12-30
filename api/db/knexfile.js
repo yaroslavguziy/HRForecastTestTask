@@ -1,12 +1,12 @@
-const { password, dbName } = require('../envConfig');
+const { password, database, user } = require('../envConfig');
 
 module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: dbName,
-      user: 'postgres',
-      password: password,
+      database,
+      user,
+      password,
     },
     pool: {
       min: 2,
