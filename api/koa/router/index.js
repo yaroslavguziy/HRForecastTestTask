@@ -5,7 +5,7 @@ const db = require('../../db/db');
 const CITIES_TABLE = 'cities';
 
 router.get('/cities/search', async ctx => {
-  const { limit = 10, query = '' } = ctx.query;
+  const { limit = '10', query = '' } = ctx.query;
   const data = await db
     .select('id', 'name')
     .from(CITIES_TABLE)
