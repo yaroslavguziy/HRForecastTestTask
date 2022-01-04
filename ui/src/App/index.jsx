@@ -3,12 +3,12 @@ import { QueryClientProvider } from 'react-query';
 
 import { queryClient } from '../constants/queryClient';
 
-import { Search } from '../components/Search';
+import { SearchContainer } from '../components/SearchContainer';
 
 export const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <Search />
+      <SearchContainer />
     </QueryClientProvider>
   );
 };
